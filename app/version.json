@@ -1,11 +1,59 @@
 {
   "apps": {
-    "ios": { "version": "1.0", "build": 1, "minBuild": 0, "url": "https://redevrx.github.io/livex-game-translate/", "notes": { "th": "", "en": "" } },
-    "android": { "version": "1.0", "build": 1, "minBuild": 0, "url": "https://redevrx.github.io/livex-game-translate/", "notes": { "th": "", "en": "" } },
-    "macos": { "version": "1.0.0", "build": 1, "minBuild": 0, "url": "https://redevrx.github.io/livex-game-translate/", "notes": { "th": "", "en": "" } },
-    "windows": { "version": "1.0.0", "build": 1, "minBuild": 0, "url": "https://redevrx.github.io/livex-game-translate/", "notes": { "th": "", "en": "" } },
-    "androidtv": { "version": "1.0", "build": 1, "minBuild": 0 },
-    "webos": { "version": "1.0.0", "build": 1, "minBuild": 0 },
-    "tizen": { "version": "1.0.0", "build": 1, "minBuild": 0 }
+    "ios": {
+      "version": "1.0",
+      "build": 1,
+      "minBuild": 0,
+      "url": "https://redevrx.github.io/livex-game-translate/",
+      "notes": {
+        "th": "",
+        "en": ""
+      }
+    },
+    "android": {
+      "version": "1.0.1",
+      "build": 2,
+      "minBuild": 0,
+      "url": "https://redevrx.github.io/livex-game-translate/",
+      "notes": {
+        "th": "ล็อกอิน Google บนคอมพิวเตอร์ และติดตั้งแอปลงทีวี Samsung กับ Android TV ที่มีแค่การแก้ไขข้อบกพร่องแบบไร้สาย",
+        "en": "Google sign-in on computers, and installing the TV app on Samsung TVs and on Android TVs with wireless debugging only"
+      }
+    },
+    "macos": {
+      "version": "1.0.1",
+      "build": 2,
+      "minBuild": 0,
+      "url": "https://redevrx.github.io/livex-game-translate/",
+      "notes": {
+        "th": "ล็อกอิน Google บนคอมพิวเตอร์ และติดตั้งแอปลงทีวี Samsung กับ Android TV ที่มีแค่การแก้ไขข้อบกพร่องแบบไร้สาย",
+        "en": "Google sign-in on computers, and installing the TV app on Samsung TVs and on Android TVs with wireless debugging only"
+      }
+    },
+    "windows": {
+      "version": "1.0.1",
+      "build": 2,
+      "minBuild": 0,
+      "url": "https://redevrx.github.io/livex-game-translate/",
+      "notes": {
+        "th": "ล็อกอิน Google บนคอมพิวเตอร์ และติดตั้งแอปลงทีวี Samsung กับ Android TV ที่มีแค่การแก้ไขข้อบกพร่องแบบไร้สาย",
+        "en": "Google sign-in on computers, and installing the TV app on Samsung TVs and on Android TVs with wireless debugging only"
+      }
+    },
+    "androidtv": {
+      "version": "1.0.1",
+      "build": 2,
+      "minBuild": 0
+    },
+    "webos": {
+      "version": "1.0.1",
+      "build": 2,
+      "minBuild": 0
+    },
+    "tizen": {
+      "version": "1.0.1",
+      "build": 2,
+      "minBuild": 0
+    }
   }
 }

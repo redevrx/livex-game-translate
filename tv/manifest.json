@@ -2,39 +2,39 @@
   "packages": [
     {
       "brand": "AndroidTv",
-      "version": "1.0.0",
-      "build": 1,
-      "file": "livex-tv-1.0.0-1.apk",
-      "size": 64853587,
-      "sha256": "11d86b430575b63c9309a8a1a1871dc1999f004641d0602c7a34cfd8ae879f70",
+      "version": "1.0.1",
+      "build": 2,
+      "file": "livex-tv-1.0.1-2.apk",
+      "size": 64869971,
+      "sha256": "a584ec50de646e5bb105a2b5f8f8902d8dea41a7747b475ad0c3d0e0b5572da4",
       "appId": "com.redev.rx.livex.tv",
       "protocol": 1,
       "minProtocol": 1,
-      "url": "https://github.com/redevrx/livex-game-translate/releases/download/v1.0.0-beta.1/livex-tv-1.0.0-1.apk"
+      "url": "https://github.com/redevrx/livex-game-translate/releases/download/v1.0.1/livex-tv-1.0.1-2.apk"
     },
     {
       "brand": "LgWebOs",
-      "version": "1.0.0",
-      "build": 1,
-      "file": "livex-tv-1.0.0-1.ipk",
-      "size": 490132,
-      "sha256": "bf0e494e03b8245251350203c61af129bafe7be90e07124c0db8caaf811c476c",
+      "version": "1.0.1",
+      "build": 2,
+      "file": "livex-tv-1.0.1-2.ipk",
+      "size": 490738,
+      "sha256": "e912932ece9416465243e457d755f61bac336abf60835f8886166f13fbdf5762",
       "appId": "com.redev.rx.livex.tv",
       "protocol": 1,
       "minProtocol": 1,
-      "url": "https://github.com/redevrx/livex-game-translate/releases/download/v1.0.0-beta.1/livex-tv-1.0.0-1.ipk"
+      "url": "https://github.com/redevrx/livex-game-translate/releases/download/v1.0.1/livex-tv-1.0.1-2.ipk"
     },
     {
       "brand": "SamsungTizen",
-      "version": "1.0.0",
-      "build": 1,
-      "file": "livex-tv-1.0.0-1.wgt",
-      "size": 493384,
-      "sha256": "a151055bb94e5dfb34c2d53b0ef19f945bb2f6a8a4bf0438c845302216a675f4",
+      "version": "1.0.1",
+      "build": 2,
+      "file": "livex-tv-1.0.1-2.wgt",
+      "size": 493383,
+      "sha256": "43425e28a12ab1ed4d215cb408c481628cb6eee1daf883cce896a53b9f212a82",
       "appId": "LiveXTv01.LiveX",
       "protocol": 1,
       "minProtocol": 1,
-      "url": "https://github.com/redevrx/livex-game-translate/releases/download/v1.0.0-beta.1/livex-tv-1.0.0-1.wgt"
+      "url": "https://github.com/redevrx/livex-game-translate/releases/download/v1.0.1/livex-tv-1.0.1-2.wgt"
     }
   ]
 }
