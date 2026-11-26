@@ -1,0 +1,11 @@
+{
+  "apps": {
+    "ios": { "version": "1.0", "build": 1, "minBuild": 0, "url": "https://redevrx.github.io/livex-game-translate/", "notes": { "th": "", "en": "" } },
+    "android": { "version": "1.0", "build": 1, "minBuild": 0, "url": "https://redevrx.github.io/livex-game-translate/", "notes": { "th": "", "en": "" } },
+    "macos": { "version": "1.0.0", "build": 1, "minBuild": 0, "url": "https://redevrx.github.io/livex-game-translate/", "notes": { "th": "", "en": "" } },
+    "windows": { "version": "1.0.0", "build": 1, "minBuild": 0, "url": "https://redevrx.github.io/livex-game-translate/", "notes": { "th": "", "en": "" } },
+    "androidtv": { "version": "1.0", "build": 1, "minBuild": 0 },
+    "webos": { "version": "1.0.0", "build": 1, "minBuild": 0 },
+    "tizen": { "version": "1.0.0", "build": 1, "minBuild": 0 }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "packages": [
+    {
+      "brand": "AndroidTv",
+      "version": "1.0.0",
+      "build": 1,
+      "file": "livex-tv-1.0.0-1.apk",
+      "size": 64853587,
+      "sha256": "11d86b430575b63c9309a8a1a1871dc1999f004641d0602c7a34cfd8ae879f70",
+      "appId": "com.redev.rx.livex.tv",
+      "protocol": 1,
+      "minProtocol": 1,
+      "url": "https://github.com/redevrx/livex-game-translate/releases/download/v1.0.0-beta.1/livex-tv-1.0.0-1.apk"
+    },
+    {
+      "brand": "LgWebOs",
+      "version": "1.0.0",
+      "build": 1,
+      "file": "livex-tv-1.0.0-1.ipk",
+      "size": 490132,
+      "sha256": "bf0e494e03b8245251350203c61af129bafe7be90e07124c0db8caaf811c476c",
+      "appId": "com.redev.rx.livex.tv",
+      "protocol": 1,
+      "minProtocol": 1,
+      "url": "https://github.com/redevrx/livex-game-translate/releases/download/v1.0.0-beta.1/livex-tv-1.0.0-1.ipk"
+    },
+    {
+      "brand": "SamsungTizen",
+      "version": "1.0.0",
+      "build": 1,
+      "file": "livex-tv-1.0.0-1.wgt",
+      "size": 493384,
+      "sha256": "a151055bb94e5dfb34c2d53b0ef19f945bb2f6a8a4bf0438c845302216a675f4",
+      "appId": "LiveXTv01.LiveX",
+      "protocol": 1,
+      "minProtocol": 1,
+      "url": "https://github.com/redevrx/livex-game-translate/releases/download/v1.0.0-beta.1/livex-tv-1.0.0-1.wgt"
+    }
+  ]
+}
