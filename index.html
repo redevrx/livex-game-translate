@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiveX ดาวน์โหลด</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;600&family=Chakra+Petch:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#08090D; --panel:#12141B; --line:rgba(236,240,255,.12); --ink:#EEF1F7; --text:#B9BFCC; --dim:#6E7584; --hot:#F0305E; --cyan:#3FD8F2; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:400 16px/1.6 Anuphan, system-ui, sans-serif;
+    background-image: radial-gradient(60% 50% at 0% 0%, rgba(240,48,94,.28), transparent 70%), radial-gradient(40% 40% at 100% 20%, rgba(110,60,255,.16), transparent 70%); background-attachment: fixed; }
+  main { max-width: 880px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font: 700 44px/1.1 'Chakra Petch', sans-serif; color: var(--ink); margin: 0 0 8px; }
+  h2 { font: 600 20px 'Chakra Petch', sans-serif; color: var(--ink); margin: 40px 0 12px; }
+  .lead { margin: 0 0 8px; max-width: 620px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+  .card { background: rgba(18,20,27,.78); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+  .card b { display:block; font: 600 17px 'Chakra Petch', sans-serif; color: var(--ink); }
+  .card small { color: var(--dim); display:block; margin: 2px 0 12px; }
+  .btn { display:inline-block; padding: 8px 18px; color:#fff; text-decoration:none; font: 600 14px 'Chakra Petch', sans-serif;
+    background: linear-gradient(#FF4673, #E0245A); clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%); }
+  .soon { color: var(--dim); font-size: 14px; }
+  .note { border-left: 2px solid var(--cyan); padding: 4px 12px; color: var(--text); }
+  a { color: var(--cyan); }
+  footer { margin-top: 48px; color: var(--dim); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>LiveX</h1>
+  <p class="lead">แปลซับเกมแบบสด อ่านข้อความจากจอเกม แปล แล้วแสดงบนมือถือ ลอยทับเกม หรือส่งขึ้นทีวี</p>
+
+  <h2>มือถือและคอม</h2>
+  <div class="grid" id="apps"></div>
+
+  <h2>ทีวี</h2>
+  <p class="note">ไม่ต้องโหลดเอง: เปิดแอป LiveX บนมือถือหรือคอมที่ต่อ Wi-Fi วงเดียวกับทีวี แล้วกด "ติดตั้งลงทีวี" แอปจะพาทำทีละขั้น</p>
+  <div class="grid" id="tvs"></div>
+
+  <footer>ไฟล์ทั้งหมดอยู่ที่ <a href="https://github.com/redevrx/livex-game-translate/releases">Releases</a></footer>
+</main>
+<script>
+  // Links come from the latest release, so this page never needs editing for a new version.
+  var apps = [
+    { name: 'Android', note: 'Android 7.0 ขึ้นไป', match: /livex-android.*\.apk$/ },
+    { name: 'iPhone / iPad', note: 'App Store', match: null },
+    { name: 'Mac', note: 'macOS 13 ขึ้นไป', match: /livex-mac.*\.dmg$/ },
+    { name: 'Windows', note: 'Windows 10 ขึ้นไป', match: /livex-windows.*\.(msi|exe)$/ },
+  ];
+  var tvs = [
+    { name: 'Android TV / Google TV', note: 'ติดตั้งจากแอปทาง Wi-Fi', match: /livex-tv-.*\.apk$/ },
+    { name: 'LG webOS', note: 'ติดตั้งจากแอปทาง Wi-Fi', match: /livex-tv-.*\.ipk$/ },
+    { name: 'Samsung Tizen', note: 'ติดตั้งจากแอปทาง Wi-Fi', match: /livex-tv-.*\.wgt$/ },
+  ];
+  function card(item, assets) {
+    var a = item.match && assets.filter(function (x) { return item.match.test(x.name); })[0];
+    var el = document.createElement('div');
+    el.className = 'card';
+    el.innerHTML = '<b></b><small></small>';
+    el.querySelector('b').textContent = item.name;
+    el.querySelector('small').textContent = item.note;
+    if (a) {
+      var link = document.createElement('a');
+      link.className = 'btn'; link.href = a.browser_download_url; link.textContent = 'ดาวน์โหลด';
+      el.appendChild(link);
+    } else {
+      var s = document.createElement('span');
+      s.className = 'soon'; s.textContent = 'เร็ว ๆ นี้';
+      el.appendChild(s);
+    }
+    return el;
+  }
+  function draw(assets) {
+    apps.forEach(function (x) { document.getElementById('apps').appendChild(card(x, assets)); });
+    tvs.forEach(function (x) { document.getElementById('tvs').appendChild(card(x, assets)); });
+  }
+  fetch('https://api.github.com/repos/redevrx/livex-game-translate/releases/latest')
+    .then(function (r) { return r.ok ? r.json() : { assets: [] }; })
+    .then(function (rel) { draw(rel.assets || []); })
+    .catch(function () { draw([]); });
+</script>
+</body>
+</html>
